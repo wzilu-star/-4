@@ -1,0 +1,21 @@
+# 密钥：绝不进仓库
+.env
+*.env
+!.env.example
+
+# 数据与索引（判决书不要外传，索引可重建）
+data/
+index/
+logs/
+judge_data/
+*.jsonl
+!eval/questions*.jsonl
+
+# 评测产物里的原始正文
+eval/results_*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
